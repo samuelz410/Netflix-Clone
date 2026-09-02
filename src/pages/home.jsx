@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import Row from "../../Netflix-Clone/components/row.jsx";
-import Footer from "../../Netflix-Clone/components/footer.js";
+import Row from "../components/row.jsx";
+import Footer from "../components/footer";
 import requests from "../utils/request.js";
 import axios from "../utils/axios";
 import { HiPlay } from "react-icons/hi";
@@ -36,7 +36,7 @@ function Home({ searchQuery = "" }) {
     <div className="bg-black min-h-screen pt-16">
       {/* Hero Banner Section */}
       <header
-        className="relative h-448px bg-cover bg-center bg-no-repeat text-white"
+        className="relative h-[448px] bg-cover bg-center bg-no-repeat text-white"
         style={{
           backgroundImage: movie?.backdrop_path
             ? `url("https://image.tmdb.org/t/p/original${movie.backdrop_path}")`
@@ -65,7 +65,7 @@ function Home({ searchQuery = "" }) {
         </div>
 
         {/* Bottom Fade */}
-        <div className="h-[7.4rem] bg-linear-to-t from-black via-transparent to-transparent absolute bottom-0 w-full" />
+        <div className="h-[7.4rem] bg-gradient-to-t from-black via-transparent to-transparent absolute bottom-0 w-full" />
       </header>
 
       {/* Movie Rows */}

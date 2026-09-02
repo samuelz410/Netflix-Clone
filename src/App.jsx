@@ -5,7 +5,7 @@ import './App.css';
 import Header from "./components/header";
 import Home from "./pages/home";
 import TVShows from "./pages/tv show.jsx";
-import Movies from "./pages/movie";
+import Movies from "./pages/movie.jsx";
 import Latest from "./pages/latest";
 function App() {
   const [searchQuery, setSearchQuery] = useState("");
